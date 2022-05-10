@@ -1,4 +1,4 @@
-function positions (firstPlace,secondPlace,lastPlace) {
+function positions(firstPlace,secondPlace,lastPlace) {
     let lugar = []
     let aux;
 
@@ -9,7 +9,7 @@ function positions (firstPlace,secondPlace,lastPlace) {
         lugar[0] = firstPlace
         lugar[1] = secondPlace
         lugar[2] = lastPlace
-    } if ('Daniel' == lastPlace) {
+    } else if('Daniel' == lastPlace) {
         aux = secondPlace
         secondPlace = 'Daniel'
         lastPlace = aux
@@ -21,6 +21,8 @@ function positions (firstPlace,secondPlace,lastPlace) {
         lugar[1] = secondPlace
         lugar[2] = lastPlace
     }
-    return lugar   
+    return `1º Colocado: ${firstPlace} 2º Colocado: ${secondPlace} 3º Colocado: ${lastPlace}` 
+    
 }
-console.log(positions('Manoel','Rafael','Daniel'))
+console.log(positions('Rafael','Daniel','Manoel'))
+
